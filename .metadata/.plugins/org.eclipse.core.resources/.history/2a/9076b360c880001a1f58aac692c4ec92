@@ -1,0 +1,9 @@
+package com.zensar.Repository;
+
+import java.util.List;
+
+import com.zensar.entities.Product;
+
+public interface ProductRepository {
+
+}

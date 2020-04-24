@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value="import org.junit.jupiter.api.Test;"/>
+		<list key="findhistory">
+			<item value="import org.junit.jupiter.api.Test;"/>
+			<item value="&lt;!-- https://mvnrepository.com/artifact/com.h2database/h2 --&gt;"/>
+			<item value="@RequestMapping(&quot;/&quot;)"/>
+			<item value="GAV"/>
+		</list>
+	</section>
+</section>

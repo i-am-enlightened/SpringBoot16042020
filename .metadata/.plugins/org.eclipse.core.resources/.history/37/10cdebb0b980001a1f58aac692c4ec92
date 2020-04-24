@@ -1,0 +1,45 @@
+package com.zensar.controller;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.zensar.entities.Product;
+
+
+@RestController
+@RequestMapping("/products")
+public class ProductController {
+
+	
+	@RequestMapping("/")
+	public List<Product> getAllProducts() {
+		return null;
+	}
+	
+	@RequestMapping("/{productId}")
+	public Product getProduct(@PathVariable("productId")int productId) {
+		return null;
+	}
+
+	@RequestMapping(value="/{productId}",method=RequestMethod.DELETE)
+	public Product deleteProduct(@PathVariable("productId")int productId) {
+		return null;
+	}
+	
+	public void insertProduct(@RequestBody Product product) {
+		
+	}
+	
+	@RequestMapping(value="/{productId}", method=RequestMethod.PUT)
+	public Product updateProduct(@PathVariable("productId")int productId,Product product) {
+		return null;
+	}
+	
+}	

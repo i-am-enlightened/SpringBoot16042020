@@ -1,0 +1,1 @@
+insert into product values(10,10,"test")

@@ -1,0 +1,26 @@
+server.port=5000
+
+spring.datasource.username=root
+spring.datasource.password=tiger
+
+spring.datasource.url=jdbc:mysql://localhost:3306/sbpmanagement
+
+#create creat-drop update available none
+spring.jpa.hibernate.ddl-auto=create
+
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.format_sql=true
+
+#info endpoint
+info.project.name=Product Management
+info.project.creator=Swapnil Shrivastava
+
+# logging level
+logging.level.org.springframework.boot=DEBUG
+
+# endpoint 
+management.endpoints.web.exposure.include= *
+management.endpoints.web.exposure.exclude= info, health
+
+spring.security.user.name=admin
+spring.security.user.password=admin

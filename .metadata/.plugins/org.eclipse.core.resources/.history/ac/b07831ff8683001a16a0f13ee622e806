@@ -1,0 +1,68 @@
+package com.zensar;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ConfigurableApplicationContext;
+
+import com.zensar.controller.ProductController;
+import com.zensar.entities.Product;
+
+@SpringBootApplication
+public class ProductManagementApplication implements CommandLineRunner {
+
+	@Autowired
+	private ProductController controller; 
+	
+	public static void main(String[] args) throws Exception {
+		ConfigurableApplicationContext context = SpringApplication.run(ProductManagementApplication.class, args);
+		test(context);
+	}
+
+//	@Override
+//	public void run(String... args) throws Exception {
+//		// TODO Auto-generated method stub
+//		Product product1 = new Product();
+//		product1.setProductId(1);
+//		product1.setProductName("Mobile");
+//		product1.setProductCost(10000);
+//		
+//		Product product2 = new Product();
+//		product2.setProductId(2);
+//		product2.setProductName("Laptop");
+//		product2.setProductCost(50000);
+//		
+//		controller.insertProduct(product1);
+//		controller.insertProduct(product2);
+//	}
+	
+	public static void test(ConfigurableApplicationContext context) throws Exception {
+		System.out.println("++++++++++++++++++++++++++++++++++++++"+context);
+		ProductController productController =  context.getBean("productController",ProductController.class);
+
+		Product product = new Product();
+		product.setProductId(1);
+		product.setProductName("Mobile");
+		product.setProductCost(10000);
+
+		Product product2 = new Product();
+		product2.setProductId(2);
+		product2.setProductName("Laptop");
+		product2.setProductCost(50000);
+
+		// controller.insertProduct(product);
+
+		// controller.insertProduct(product2);
+		
+		productController.insertProduct(product);
+		productController.insertProduct(product2);
+	
+	}
+
+	@Override
+	public void run(String... args) throws Exception {
+		// TODO Auto-generated method stub
+		
+	}
+}

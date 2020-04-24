@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: 91797
+Build-Jdk: 9.0.4
+Implementation-Title: spring-boot-manual
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: com.zensar
+Implementation-Vendor: Pivotal Software, Inc.
+Implementation-URL: http://www.example.com
+Created-By: Maven Integration for Eclipse
+
